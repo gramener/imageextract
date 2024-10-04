@@ -1,0 +1,56 @@
+{
+  "insurance": {
+    "title": "Insurance Claims Processing",
+    "context": "Streamline your insurance claims process by extracting key information from accident reports, damage claims, and medical forms.",
+    "templates": [
+      {
+        "url": "img/car-accident-report.webp",
+        "description": "Sample Car Accident Report"
+      },
+      {
+        "url": "img/property-damage-claim-report.webp",
+        "description": "Sample Property Damage Claim Report"
+      },
+      {
+        "url": "img/medical-insurance-form.webp",
+        "description": "Sample Medical Insurance Form"
+      }
+    ]
+  },
+  "security": {
+    "title": "Security and Surveillance",
+    "context": "Enhance your security operations by automatically extracting data from CCTV footage, access logs, and incident reports.",
+    "templates": [
+      {
+        "url": "img/cctv-footage-analysis-report.webp",
+        "description": "Sample CCTV Footage Analysis Report"
+      },
+      {
+        "url": "img/access-control-log.webp",
+        "description": "Sample Access Control Log"
+      },
+      {
+        "url": "img/incident-report.webp",
+        "description": "Sample Incident Report"
+      }
+    ]
+  },
+  "financial": {
+    "title": "Financial Services",
+    "context": "Simplify financial document processing by extracting key data from bank statements, invoices, and tax returns.",
+    "templates": [
+      {
+        "url": "img/bank-statement.webp",
+        "description": "Sample Bank Statement"
+      },
+      {
+        "url": "img/invoice.webp",
+        "description": "Sample Invoice"
+      },
+      {
+        "url": "img/tax-return-report.webp",
+        "description": "Sample Tax Return Report"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Extract</title>
+  <!-- Updated Bootstrap and added Bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .narrative {
+      max-width: 40rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=".">Image Extract</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-item dropdown ms-auto" role="group" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <button class="dark-theme-toggle btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme (auto)">
+            <i class="bi bi-circle-half"></i> <span class="d-lg-none ms-2">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" data-bs-theme-value="light"><i class="me-2 bi bi-sun-fill"></i> Light</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="dark"><i class="me-2 bi bi-moon-stars-fill"></i> Dark</button></li>
+            <li><button class="dropdown-item" data-bs-theme-value="auto"><i class="me-2 bi bi-circle-half"></i> Auto</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="mt-5 text-center">Image Extract</h1>
+
+    <div class="mx-auto my-5 narrative">
+      <p>Image Extract is an <strong>LLM-powered tool</strong> that extracts <strong>structured data</strong> from images in any industry or function.</p>
+      <p>It analyzes images to provide <strong>detailed, industry-specific information</strong> in a user-friendly format.</p>
+      <p>Start by selecting an industry below. Each has <strong>pre-selected image templates</strong> demonstrating processable image types and data. Click any template to see the <strong>AI's extraction capabilities</strong>.</p>
+      <p>You can also <strong>upload your own image</strong>. This app will analyze it and extract relevant information based on the industry context. Results appear in a <strong>structured table</strong>, which you can review and <strong>save as JSON</strong>.</p>
+    </div>
+
+
+    <div id="error-message" class="alert alert-danger mt-3" style="display: none;"></div>
+    <div class="row" id="industry-cards">
+      <!-- Industry cards will be dynamically generated here -->
+    </div>
+    <div class="templates-and-upload" style="display: none;">
+      <h2 id="selected-industry"></h2>
+      <div class="row" id="image-templates"></div>
+      <div class="mt-3">
+        <h3>Upload Your Own Image</h3>
+        <input type="file" id="upload" class="form-control" accept="image/*" />
+        <button id="upload-btn" class="btn btn-primary mt-2" style="display: none;">Upload</button>
+      </div>
+      <div class="loading mt-3 text-center" style="display: none;">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div class="table-responsive mt-3">
+        <table class="table" id="result-table"></table>
+      </div>
+      <button id="save-json-btn" class="btn btn-success mt-2" style="display: none;">Save JSON</button>
+    </div>
+  </div>
+
+</body>
+<footer class="my-5 vh-100 d-flex align-items-center justify-content-center">
+  <h1 class="display-4">Designed by <a href="https://gramener.com/" class="text-reset link-offset-3 link-underline link-underline-opacity-25">Gramener</a></h1>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@gramex/ui@0.3/dist/dark-theme.js" type="module"></script>
+<script type="module" src="script.js"></script>
+
+</html>
