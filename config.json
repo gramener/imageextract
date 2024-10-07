@@ -52,5 +52,59 @@
         "description": "Sample Tax Return Report"
       }
     ]
+  },
+  "invoice": {
+    "title": "Automated Document Processing",
+    "context": "Streamline your invoice processing by automatically extracting key information from various invoice formats.",
+    "templates": [
+      {
+        "url": "img/invoice-1.webp",
+        "description": "Sample Invoice Template 1"
+      },
+      {
+        "url": "img/invoice-2.webp",
+        "description": "Sample Invoice Template 2"
+      },
+      {
+        "url": "img/invoice-3.webp",
+        "description": "Sample Invoice Template 3"
+      }
+    ]
+  },
+  "identity": {
+    "title": "Identity Verification",
+    "context": "Enhance your identity verification process by automatically extracting and validating information from various ID documents.",
+    "templates": [
+      {
+        "url": "img/aadhar-card.webp",
+        "description": "Sample Aadhar Card"
+      },
+      {
+        "url": "img/sample-indian-passport-1.webp",
+        "description": "Sample Indian Passport"
+      },
+      {
+        "url": "img/sample-indian-passport-2.webp",
+        "description": "Sample ID Document"
+      }
+    ]
+  },
+  "brands": {
+    "title": "Brand Logo Detection",
+    "context": "Identify and analyze brand logos in images to track brand presence and marketing effectiveness.",
+    "templates": [
+      {
+        "url": "img/apple.webp",
+        "description": "Apple Logo"
+      },
+      {
+        "url": "img/starbucks.webp",
+        "description": "Starbucks Logo"
+      },
+      {
+        "url": "img/under-armour.webp",
+        "description": "Under Armour Logo"
+      }
+    ]
   }
 }

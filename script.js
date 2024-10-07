@@ -129,7 +129,9 @@ function displayResult(content) {
     };
   } catch (error) {
     console.error("Error displaying result:", error);
-    displayError("Unable to parse the result. Please try uploading a different image or selecting another template.");
+    displayError(
+      `ERROR: ${error.message}<hr>RESPONSE: ${content}<hr>Please try uploading a different image or selecting another template.`
+    );
   }
 }
 
@@ -162,7 +164,7 @@ function renderJsonTable(data, table) {
 }
 
 function displayError(message) {
-  errorMessageDiv.textContent = message;
+  errorMessageDiv.innerHTML = message;
   errorMessageDiv.style.display = "block";
   resultTable.innerHTML = ""; // Clear any previous results
   saveJsonBtn.style.display = "none"; // Hide the save button
